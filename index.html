@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/reset.css">
 </head>
   <body>
 
@@ -38,11 +39,12 @@
     </div>
 
     <ul class="category_nav">
-      <li><a href="##">Soprts</a></li>
-      <li><a href="##">Boardgame</a></li>
-      <li><a href="##">Food</a></li>
+      <li><a href="#panel1">Sports</a></li>
+      <li><a href="#panel2">Boardgame</a></li>
+      <li><a href="#panel3">Food</a></li>
     </ul>
 
+  <div class="panel" id="panel1">
     <div class="product_wrapper">
       <div class="product">
         <img src="images/product.jpg" alt="">
@@ -156,11 +158,40 @@
         <a href="##">See more</a>
       </div>
     </div>
+  </div>
+
+    <div class="panel" id="panel2">
+      我是Boardgame
+    </div>
+
+    <div class="panel" id="panel3">
+      我是food
+    </div>  
 
     <div class="footer">
       <div class="wrapper">
         <p>Footer sponsor or something like that</p>
       </div>
-    </div>  
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.category_nav a').click(function(){
+          $this = $(this);
+          $('.panel').hide();
+          $('.category_nav a.active').removeClass('active');
+          $this.addClass('active').blur();
+          var panel = $this.attr('href');
+          $(panel).fadeIn(250);
+          return false;
+        });
+        $('.category_nav li:first a').click();
+      });
+    </script>
+
+
   </body>
 </html>
