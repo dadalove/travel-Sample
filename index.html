@@ -5,6 +5,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/reset.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/index.js"></script>
 </head>
   <body>
 
@@ -31,7 +33,11 @@
     </div>
 
     <div class="slide">
-      <img src="images/slide.jpg" alt="">
+      <ul class="pic">
+        <li><img src="images/slide.jpg" alt=""></li>
+        <li><img src="images/slide2.jpg" alt=""></li>
+        <li><img src="images/slide3.jpg" alt=""></li>
+      </ul>
     </div>
 
     <div class="categories">
@@ -173,25 +179,6 @@
         <p>Footer sponsor or something like that</p>
       </div>
     </div>
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $('.category_nav a').click(function(){
-          $this = $(this);
-          $('.panel').hide();
-          $('.category_nav a.active').removeClass('active');
-          $this.addClass('active').blur();
-          var panel = $this.attr('href');
-          $(panel).fadeIn(250);
-          return false;
-        });
-        $('.category_nav li:first a').click();
-      });
-    </script>
-
 
   </body>
 </html>
