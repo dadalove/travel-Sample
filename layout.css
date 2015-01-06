@@ -1,0 +1,275 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 1024px;
+}
+
+/* header and nav */
+.header{
+  width: 100%;
+  height: 510px;
+  background-color: #999;
+  position: relative;
+}
+.banner{
+  width: 1024px;
+  margin: 0 auto;
+}
+.logo{
+  position: absolute;
+  top:20px;
+  left: 106px;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+.nav{
+  list-style-type: none;
+  position: absolute;
+  top: 20px;
+  right: 106px;
+  width: 400px;
+}
+.nav li{
+  float: left;
+  padding-right: 30px;
+}
+.nav li a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav li a:hover{
+  text-decoration: underline;
+  color: #ddd;
+}
+.sign{
+  padding-left: 30px;
+}
+
+.title{
+  text-align: center;
+  color: #fff;
+  width: 272px;
+  margin: -266px auto;
+}
+.title h2{
+  margin-bottom: 40px;
+}
+
+.fb_btn a{
+  background-color: rgb(75, 126, 189);
+  color: #fff;
+  font-size: 19px;
+  padding: 0.7em 2.8em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.fb_btn a:hover{
+  background-color: rgb(65, 119, 186);
+}
+/*  */
+
+
+.content{
+  text-align: center;
+  width: 940px;
+  margin: 10px auto;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+}
+.content h1{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.content h4{
+  color: #aaa;
+}
+.content h3{
+  margin-top: 40px;
+  padding-bottom: 15px;
+}
+
+/*  */
+
+
+.slide{
+  width: 940px;
+  height: 320px;
+  margin: 25px auto; 
+  overflow: hidden;
+}
+.pic{
+  width: 2820px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.pic li{
+  float: left;
+}
+
+/*  */
+
+
+
+/*  */
+.categories h3{
+  text-align: center;
+  width: 940px;
+  margin: 40px auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*  */
+
+
+
+/*  */
+.category_nav{
+  list-style-type: none;
+  margin: 0;
+  width: 940px;
+  margin: 0 auto; 
+}
+.category_nav li{
+  float: left;
+  color: #666;
+  padding-right: 40px;
+}
+.category_nav li a{
+  text-decoration: none;
+  color: #777;
+}
+.category_nav li a:hover{
+  text-decoration: underline;
+}
+/*  */
+
+
+/* tabs sports */
+.product_wrapper{
+  width: 940px;
+  margin: 20px auto; 
+  clear: both;
+  position: relative;
+}
+.product{
+  background-color: #fff;
+  border: 1px solid #888;
+  float: left;
+  width: 300px;
+  height: 350px;
+  margin-right: 14px;
+  margin-top: 30px;
+}
+.r{
+  margin-right: 0px; 
+}
+/*  */
+.product_info{
+  width: 270px;
+  margin: 10px auto 0 auto;
+}
+.product_info span:last-child{
+  margin-left: 30px;
+}
+.product_info span:first-child{
+  margin-right: 30px;
+}
+.product_text{
+  line-height: 1;
+  width: 280px;
+  margin: 10px auto;
+}
+.product a{
+  text-decoration: none;
+  color: #d88;
+  width: 100px;
+  margin: -6px auto;
+  display: block;
+}
+/*  */
+.people_wrapper img{
+  border-radius: 50%;
+}
+.people_name{
+  width: 50px;
+  display: inline-block;
+}
+.people_wrapper span{
+  display: inline-block; 
+}
+.people_wrapper span:last-child{
+  margin-top: 7px;
+}
+.people_wrapper{
+  margin-top: -33px;
+  margin-left: 20px; 
+}
+/*  */
+
+
+/* tabs food */
+.food{
+  float: left;
+  margin: 55px 25px 0px 18px;
+  background-color: #ddd;
+  height: 170px;
+  width: 270px;
+}
+.food img{
+  margin: 10px auto;
+  width: 250px;
+  display: block;
+}
+/*  */
+
+
+/*  */
+.more_btn a{
+  font-size: 16px;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  background-color: rgb(101, 185, 185);
+  margin: 20px auto 0 auto;
+  text-decoration: none;
+  position: absolute;
+  top: 800px;
+  right: 400px;
+}
+.more_btn a:hover{
+  background-color: rgb(121, 185, 185);
+}
+/*  */
+
+
+/*  */
+.footer{
+  background-color: #888;
+  width: 100%;
+  float: left;
+  margin-top: 150px;
+}
+.footer .wrapper p{
+  margin: 50px auto;
+  text-align: center;
+}
+
+/*jq*/
+.category_nav a.active{
+  color: #9f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
