@@ -219,11 +219,37 @@ body{
   height: 170px;
   width: 270px;
 }
+.food:hover{
+  -webkit-animation: shadow 1.5s infinite;
+  -moz-animation: shadow 1.5s infinite;
+  -ms-animation: shadow 1.5s infinite;
+  -o-animation: shadow 1.5s infinite;
+  animation: shadow 1.5s infinite;
+}
+@-webkit-keyframes shadow
+@-moz-keyframes shadow
+@-ms-keyframes shadow
+@-o-keyframes shadow
+@keyframes shadow{
+  0%{ box-shadow: 1px 1px 2px #ccc; }
+  100%{ box-shadow: 1px 1px 5px #333;}
+}
+
 .food img{
   margin: 10px auto;
   width: 250px;
   display: block;
 }
+/*  */
+
+
+/* tabs boardgame */
+.tabs2_content{
+  padding-top: 30px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
 /*  */
 
 
