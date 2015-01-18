@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="reset.css">
   <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/index.js"></script>
 </head>
   <body>
@@ -35,7 +36,15 @@
             </ul>
         </li>
       </ul>
-      <span class="sign"><a href="##">Sign in</a></span>
+      <a href="##" class="btn_signin">Sign in</a>
+      <form class="signin">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="name@example.com">
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Password least 8 number">
+        <button>Sign In</button>        
+      </form>
+      
       <div class="title">
         <h1>Co Fun Day</h1>
         <h2>讓今天從玩樂開始</h2>

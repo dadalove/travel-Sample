@@ -28,11 +28,12 @@ body{
   width: 50px;
   height: 50px;
 }
+
 .nav{
   list-style-type: none;
   position: absolute;
   top: 37px;
-  right: 106px;
+  right: 202px;
   width: 400px;
   font-size: 0px;
 }
@@ -50,6 +51,7 @@ body{
   text-decoration: none;
   color: #aaa;
 }
+
 .nav2{
   position: absolute;
   left: -9999px;
@@ -87,11 +89,13 @@ body{
   text-decoration: none;
   color: #eee;
 }
-.sign a{
+
+ul+a{
   color: #fff;
   position: absolute;
   top: 38px;
   right: 110px;
+  text-decoration: none;
 }
 
 .title{
@@ -335,15 +339,81 @@ body{
   text-align: center;
 }
 
-/*jq*/
+/* jq */
 .category_nav a.active{
   color: #9f0;
 }
+/*  */
 
+/* signin form */
+.signin{
+  width: 184px;
+  height: 305px;
+  position: absolute;
+  right: 40px;
+  top: 80px;  
+  background-color: #eee;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 2px 2px 7px 0px #999;
+}
+.signin:after{
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-width: 0px 10px 10px 10px;
+  border-color: transparent transparent #eee transparent;
+  border-style: solid;
+  margin-left: -10px;
+  position: absolute;
+  top: 0px;
+  bottom: 315px;
+  left: 90px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
+form button{
+  display: block;
+  position: absolute;
+  top: 236px;
+  left: 11px;
+  padding: 1em 2.5em;
+  border-radius: 5px;
+  background-color: #f90;
+  color: #fff;
+  border-style: none;
+  width: 160px;
+  /*margin: 40px auto;*/
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  -ms-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+form button:hover{
+  background-color: #f70;
+}
+form label{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 12px 0 3px 12px;
+}
+form input{
+  width: 155px;
+  height: 20px;
+  margin: auto;
+  display: block;
+}
+/*  */
 
-
-
+.signin label.error{
+  color: #f00;
+  font-weight: bold;
+  /*position: absolute;*/
+}
 
 
 

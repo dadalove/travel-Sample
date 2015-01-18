@@ -26,4 +26,33 @@ $(document).ready(function(){
       }
     }
   });
+  $(function(){
+    $('.btn_signin').click(function(){
+      $('.signin').slideToggle();
+    })
+  });
+  $(function(){
+    $('.signin').validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+      },
+        password: {
+          required: true,
+          rangelength:[8,16]
+        }
+      },
+      messages: {
+        email: {
+          required: "Please supply an e-mail address.",
+          email: "This is not a valid email address."
+        },
+        password: {
+          required: 'Please type a password',
+          rangelength: 'Password must be between 8 and 16 characters long.'
+        }
+      }
+    });
+  });
 });
