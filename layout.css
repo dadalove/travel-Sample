@@ -207,7 +207,7 @@ ul+a{
 /* tabs sports */
 .product_wrapper{
   width: 940px;
-  margin: 20px auto; 
+  margin: auto; 
   clear: both;
   position: relative;
 }
@@ -282,15 +282,14 @@ ul+a{
   -o-animation: shadow 1.5s infinite;
   animation: shadow 1.5s infinite;
 }
-@-webkit-keyframes shadow
-@-moz-keyframes shadow
-@-ms-keyframes shadow
-@-o-keyframes shadow
+@-webkit-keyframes shadow{
+  0%{ box-shadow: 1px 1px 2px #ccc; }
+  100%{ box-shadow: 1px 1px 5px #333;}
+}
 @keyframes shadow{
   0%{ box-shadow: 1px 1px 2px #ccc; }
   100%{ box-shadow: 1px 1px 5px #333;}
 }
-
 .food img{
   margin: 10px auto;
   width: 250px;
@@ -339,11 +338,6 @@ ul+a{
   text-align: center;
 }
 
-/* jq */
-.category_nav a.active{
-  color: #9f0;
-}
-/*  */
 
 /* signin form */
 .signin{
@@ -373,7 +367,7 @@ ul+a{
   margin-bottom: auto;
 }
 
-form button{
+form .btn{
   display: block;
   position: absolute;
   top: 236px;
@@ -384,7 +378,6 @@ form button{
   color: #fff;
   border-style: none;
   width: 160px;
-  /*margin: 40px auto;*/
   cursor: pointer;
   -webkit-transition: background-color 0.4s linear;
   -moz-transition: background-color 0.4s linear;
@@ -392,7 +385,7 @@ form button{
   -o-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
 }
-form button:hover{
+form .btn:hover{
   background-color: #f70;
 }
 form label{
@@ -409,11 +402,17 @@ form input{
 }
 /*  */
 
+
+/* jq */
+.category_nav a.active{
+  color: #9f0;
+}
+
 .signin label.error{
   color: #f00;
   font-weight: bold;
-  /*position: absolute;*/
 }
+/*  */
 
 
 
